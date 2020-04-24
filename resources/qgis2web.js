@@ -27,14 +27,14 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-        extent: [517753.446369, 6905974.410949, 2131639.399389, 7981073.818495], maxZoom: 12, minZoom: 8
+        extent: [401763.550586, 6957852.369016, 2027618.057618, 8027763.418062], maxZoom: 12, minZoom: 7
     })
 });
 
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-map.getView().fit([517753.446369, 6905974.410949, 2131639.399389, 7981073.818495], map.getSize());
+map.getView().fit([401763.550586, 6957852.369016, 2027618.057618, 8027763.418062], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
